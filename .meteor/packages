@@ -10,5 +10,5 @@ iron:router
 accounts-password
 bootswatch:lumen
 ian:accounts-ui-bootstrap-3
-pcel:loading
 mrt:flash-messages
+multiply:iron-router-progress
