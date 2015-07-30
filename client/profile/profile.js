@@ -1,6 +1,8 @@
+var user = Meteor.user();
+
 Template.profile.helpers({
-  name:"test",
-  website:"example.com",
-  email:"asd@asd.com",
-  location:"vahin pa"
+  username: user.username,
+  website: '',
+  email: user.emails[0].address,
+  location: ''
 })
