@@ -1,3 +1,8 @@
 Meteor.publish('profile', function(){
-  return Meteor.users.find({_id: this.userId});
+  if(this.userId){
+    return Meteor.users.find({_id: this.userId});
+  }
 });
+Meteor.publish('colls', function () {
+  return Colls.find().fetch();
+})
