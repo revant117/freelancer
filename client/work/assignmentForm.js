@@ -13,25 +13,18 @@ Template.assignmentForm.events({
     //  console.log(isEmpty(pages));  working ,
 
 
+    if (isEmpty(pages)&&isEmpty(date)&&isEmpty(format)&&isEmpty(words)&&isEmpty(description) ){
 
 
+          Meteor.call('insertAssignmentForm',pages,date,format,words,description,function(err,id){
+          console.log(id);
+          });
+       console.log("inserted");
 
-
- if (isEmpty(pages)&&isEmpty(date)&&isEmpty(format)&&isEmpty(words)&&isEmpty(description) ){
-
-  Meteor.call('insertAssignmentForm',pages,date,format,words,description,function(err,id){
-    console.log(id);
-  });
-  console.log("inserted");
-
- }
- else {
+      }else {
    alert("Please fill out all the entries ");
+    }
  }
-
-
-
-   }
  });
 
 

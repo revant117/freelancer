@@ -11,3 +11,4 @@ bootswatch:lumen
 ian:accounts-ui-bootstrap-3
 mrt:flash-messages
 multiply:iron-router-progress
+cfs:filesystem
