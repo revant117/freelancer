@@ -8,3 +8,6 @@ Meteor.publish('profile', function(){
 Meteor.publish('assignments', function () {
   return Assignments.find();
 })
+Meteor.publish('chat', function () {
+  return Chats.find();
+})
