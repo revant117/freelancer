@@ -1,0 +1,29 @@
+<template name = "assignmentForm">
+<form id = "assignmentForm" class = "assignmentForm">
+    <div class="form-group">
+        <label for="Number of Pages">No. of pages</label>
+        <input type="number" class="form-control" id="pages" name="pages" placeholder="Number of pages">
+    </div>
+    <div class="form-group">
+        <label for="deadline">Deadline</label>
+        <input type="date" class="form-control" id="date"  name="date" placeholder="Deadline">
+    </div>
+    <div class="form-group">
+        <label for="format">Output Format</label>
+        <input type="text" class="form-control" id="format" name="format"  placeholder="format">
+    </div>
+    <div class="form-group">
+        <label for="no of words">Number of Words</label>
+        <input type="number" class="form-control" id="words" name="words" placeholder="Number of Words">
+    </div>
+
+    <div class="form-group">
+       <label for="Description">Description:</label>
+       <textarea class="form-control" rows="5" id="description" name="description" form="assignmentForm"  placeholder="Enter discription here"></textarea>
+   </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+</template>
