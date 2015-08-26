@@ -8,3 +8,5 @@ Meteor.publish('profile', function(){
 Meteor.publish('assignments', function () {
   return Assignments.find();
 })
+
+Meteor.publish("files", function(){ return Files.find(); });

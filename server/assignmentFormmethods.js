@@ -11,5 +11,11 @@ Meteor.methods({
             // createdBy: currentUserId
         });
         console.log("inserted in server");
+    },
+    inserUrl : function(id,fileid){
+      return Assignments.update(id , {$set:{"fileUrl": "/cfs/files/"+ id +"/" + fileid}});
+      console.log("inserted url in server");
+
     }
+
 });
