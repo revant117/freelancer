@@ -1,7 +1,9 @@
 // Meteor.methods({
-//   createUser : function(uname,email,password){
+//   create : function(uname,email,password){
+//      var id;
 //
-//     Accounts.createUser({email: email, password: password}, function(err) {
+//     id = Accounts.createUser({username:uname , email: email, password: password}, function(err) {
+//       alert("added");
 //       if (err) {
 //         if (err.message === 'Email already exists. [403]') {
 //           console.log('We are sorry but this email is already used.');
@@ -12,6 +14,9 @@
 //         console.log('Congrats new Meteorite, you\'re in!');
 //       }
 //     });
+//
+
+//
 //
 //
 //   },

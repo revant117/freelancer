@@ -13,3 +13,4 @@ mrt:flash-messages
 multiply:iron-router-progress
 cfs:gridfs
 cfs:standard-packages
+alanning:roles
